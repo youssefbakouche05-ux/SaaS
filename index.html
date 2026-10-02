@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة طعام المطعم الذكية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background-color: #ff4757;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 250px;
+            padding: 15px;
+            text-align: right;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #2f3542;
+        }
+        .price {
+            color: #ff4757;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .btn {
+            background-color: #2ed573;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🍕 مطعم البركة الذكي</h1>
+        <p>مرحباً بك! اختر وجبتك المفضلة وسنقوم بتجهيزها فوراً</p>
+    </header>
+
+    <div class="menu-container">
+        <!-- الوجبة الأولى -->
+        <div class="card">
+            <h3>بيتزا مارجريتا</h3>
+            <p>صلصة طماطم غنية مع جبنة الموتزاريلا الفاخرة والأعشاب.</p>
+            <span class="price">8.50 يورو</span>
+            <button class="btn">إضافة للطلب 🛒</button>
+        </div>
+
+        <!-- الوجبة الثانية -->
+        <div class="card">
+            <h3>برجر لحم كلاسيك</h3>
+            <p>شريحة لحم مشوي مع الخس، الطماطم، والصوص السري.</p>
+            <span class="price">6.00 يورو</span>
+            <button class="btn">إضافة للطلب 🛒</button>
+        </div>
+
+        <!-- الوجبة الثالثة -->
+        <div class="card">
+            <h3>بطاطس مقرمشة</h3>
+            <p>أصابع بطاطس ذهبية ومقرمشة مع بهارات المطعم الخاصة.</p>
+            <span class="price">3.00 يورو</span>
+            <button class="btn">إضافة للطلب 🛒</button>
+        </div>
+    </div>
+
+</body>
+</html>
